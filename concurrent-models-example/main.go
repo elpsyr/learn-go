@@ -33,6 +33,7 @@ func performQuery(query int, pool *pool.Pool) {
 	defer wg.Done()
 
 	resource, err := pool.AcquireResource()
+
 	if err != nil {
 		log.Fatalln(err)
 	}
