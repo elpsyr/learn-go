@@ -21,7 +21,6 @@ func doSomething(ctx context.Context) {
 func main() {
 	//创建空context的两种方法
 	ctx := context.Background() //返回一个空的context，不能被cancel，kv为空
-	fmt.Println(ctx)
 
 	//todoCtx := context.TODO()
 
